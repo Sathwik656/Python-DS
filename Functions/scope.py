@@ -1,4 +1,4 @@
-'''x = 1
+x = 1
 def foo():
     global x
     x = 11
@@ -11,10 +11,10 @@ def bar():
 
 foo()
 bar()
-print(x)'''
+print(x)
 
 # normal order
-'''x = 1
+x = 1
 def outer():
     x = 2
     def inner():
@@ -25,10 +25,10 @@ def outer():
     print(f"outer sees x equalt to {x}")
     return
 outer()
-print(f"Global sees x equal to {x}")'''
+print(f"Global sees x equal to {x}")
 
 # changing global from inner
-'''x = 1
+x = 1
 def outer():
     x = 2
     def inner():
@@ -40,10 +40,10 @@ def outer():
     print(f"outer sees x equalt to {x}")
     return
 outer()
-print(f"Global sees x equal to {x}")'''
+print(f"Global sees x equal to {x}")
 
 #changing local from inner using nonlocal
-'''x = 1
+x = 1
 def outer():
     x = 2
     def inner():
@@ -55,7 +55,7 @@ def outer():
     print(f"outer sees x equalt to {x}")
     return
 outer()
-print(f"Global sees x equal to {x}")'''
+print(f"Global sees x equal to {x}")
 
 #changing all 3 scopes (x=3) using global method
 x = 1
